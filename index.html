@@ -1,1 +1,508 @@
-<h1>Hello World</h1>
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus Shearer Drummer</title>
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ca8f18368.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/turn.js"></script>
+    <script src="css/site.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body class="bg-gray-900">
+
+
+	
+    <div class="bg-gray-900">
+
+        <nav class="w-full bg-gray-900 lg:bg-red-700 h-auto fixed border-b-4 border-gray-800 top-0 z-50">
+
+            <div class="container mx-auto lg:mx-auto flex overflow-hidden lg:h-48 h-full bg-red-700 text-white mr-6 justify-center z-30" id="msd-header">
+
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/MSD.png" class="h-20 mr-2 bg-gray-900 lg:hidden" />
+
+                <div class="flex-1 hidden lg:block">
+                    <p></p>
+                </div>
+                <div class="bg-red-700 h-full p-2 flex-grow leading-none text-center" id="msd-header-content">
+                    <p class="text-4xl lg:text-6xl text-bebas tracking-stupidlytight">Marcus Shearer</p>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/MSD.png" class="hidden h-20 mr-2 lg:block lg:mx-auto" />
+                    <p class="font-mono uppercase font-hairline text-xs tracking-stupidlywide border-b-2 border-t-2 py-1">Drummer</p>
+                </div>
+                <div class="flex-1 text-center font-mono hidden lg:block px-4" id="msd-header-content">
+
+                </div>
+
+                <div class="block lg:hidden z-50" id="msd-nav-mobile"><i id="msd-nav-mobile" class="fas fa-bars text-2xl py-4 text-white bg-gray-900 h-full px-6"></i></div>
+
+            </div>
+
+            <div class="w-full bg-gray-900 border-gray-800 border-t-4">
+                <div class="container mx-auto border-gray-800 h-auto hidden bg-gray-900 lg:block z-50" id="msd-nav-mobile-dropdown">
+                    <div class="flex flex-col lg:flex-row bg-gray-900 lg:border-gray-800">
+                        <a href="#index" Match="NavLinkMatch.All" class="text-white text-bebaslight flex-grow text-xl text-left lg:text-center bg-gray-800 lg:bg-gray-900 lg:hover:bg-gray-800 px-4 py-2 m-2 ">
+                            Home
+                        </a>
+                        <a href="#about" class="text-white text-bebaslight flex-grow text-xl text-left lg:text-center bg-gray-800 lg:bg-gray-900 lg:hover:bg-gray-800 px-4 py-2 m-2 ">
+                            About Marcus
+                        </a>
+                            <a href="#tuition" class="text-white text-bebaslight flex-grow text-xl text-left lg:text-center bg-gray-800 lg:bg-gray-900 lg:hover:bg-gray-800 px-4 py-2 m-2 ">
+                                Book Tuition
+                            </a>
+                            <a href="#contact" class="text-white text-bebaslight flex-grow text-xl text-left lg:text-center bg-gray-800 lg:bg-gray-900 lg:hover:bg-gray-800 px-4 py-2 m-2 ">
+                                Contact Marcus
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <!--Content start -->
+        <div id="index">
+
+
+            <video autoplay hidden muted loop class="absolute hidden lg:block lg:mt-40 mt-20" style="opacity: 0.5; top:30px; right:0; z-index:0;  min-width: 100%;">
+                <source src="./Content/MSD_VID_SPLASH.mp4" type="video/mp4" />
+            </video>
+            <div class="z-40">
+                <div class="bg-gray-900 text-white">
+                    <div class="hidden lg:block w-full h-64 lg:h-full mb-8 lg:mb-2 lg:pt-40">
+
+                        <!--Desktop Splash-->
+                        <div class="hidden lg:relative lg:block" style="height:70em;">
+                            <div class="h-64 lg:mb-64">
+                                <div class="w-full h-full absolute text-center text-white text-3xl lg:text-5xl p-auto">
+                                    <div class="container mx-auto pt-32 lg:pt-64">
+                                        <p class="text-comicbook" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;">
+                                            <span class="hidden lg:block words"></span>
+                                            <span class="block lg:hidden">Learn to Drum with a Professional</span>
+
+                                            <span class="hidden lg:block letter-changer"></span>
+                                        </p>
+                                        <button class="lg:visible invisible h-auto w-auto bg-red-700 text-3xl text-bebaslight shadow-xl mt-32 px-4 py-2"> <i class="fas fa-play"></i> <a href="#about">Learn More</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="block lg:hidden h-auto lg:mb-64">
+                        <div class="w-full mt-8 pt-64 relative text-center text-white text-3xl p-auto" style="background-image: url('/Content/MSD_MOB_SPLASH.jpg'); background-position:75% 60%; background-size: cover;">
+                            <div class="container mx-auto pt-32  pb-48">
+                                <p class="text-comicbook" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;">
+                                    <span class="">Learn to Drum with </span>
+                                    <span class="">a Professional</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" bg-gray-900 relative mb-6">
+
+
+                        <div class="p-4 pb-16 mt-2 lg:mt-32 container mx-auto bg-gray-900 ">
+                            <p class="text-bebaslight text-2xl mb-1">Professional Drum Tuition in Surrey</p>
+                            <p class="text-raleway mb-1">Are you looking to learn to drum with a professional?</p>
+
+                            <div class="text-raleway mb-4">
+
+                                <p>
+                                    Welcome to my site!
+                                </p>
+                            </div>
+
+
+                            <button class="invisible lg:visible text-bebaslight text-2xl h-auto w-auto px-8 py-1 rounded-lg bg-red-700 text-white float-right"><a href="#tuition">Book Tuition</a></button>
+
+
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <button class="visible lg:invisible text-bebaslight w-40 text-lg px-8 py-1 rounded-lg bg-red-700 text-white mt-2"><a href="#tuition">Book Tuition</a></button>
+                                </div>
+                                <div></div>
+                                <div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 relative mb-12">
+
+
+                        <div class="p-4 pb-16 mt-4 container mx-auto bg-gray-900 ">
+                            <p class="text-bebaslight text-2xl mb-1">Find me on social media</p>
+                            <p class="text-raleway">
+                                You can find me on Facebook and Youtube
+                            </p>
+                            <div class="text-raleway text-5xl mb-4 grid grid-cols-3 bg-gray-300 rounded-lg mt-6">
+
+                                <div class="text-center">
+                                    <a href="http://www.youtube.com/marcusshearerdrums">    <i class="fab fa-youtube mx-4 text-red-700"></i></a>
+
+
+                                </div>
+                                <div class="text-center">
+                                    <a href="https://www.instagram.com/marcusshearerdrummer/"><i class="fab fa-instagram mx-4 text-blue-700"></i></a>
+
+                                </div>
+                                <div class="text-center">
+                                    <a href="https://www.facebook.com/marcusshearerdrummer/"><i class="fab fa-facebook mx-4 text-blue-700"></i></a>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Content end -->
+        <!--About Start -->
+
+        <div class="bg-gray-900 text-white" id="about">
+            <div class="p-4 pb-16 container mx-auto">
+
+                <p class="text-bebaslight text-4xl mb-4">About Marcus</p>
+                <hr />
+                <br />
+                <div class="w-full lg:w-3/4 lg:flex lg:mx-auto fade-in">
+                    <div class="h-auto w-1/3 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image:url(./css/Profile.jpg)" title="Marcus 'Sparky' Shearer">
+                    </div>
+                    <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-gray-200 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8">
+                            <div class="text-center lg:text-left text-black text-2xl mb-2 text-bebaslight">Professional Drum Tutor based in Surrey</div>
+                            <p class="text-black text-base text-raleway">
+                                Marcus is a full time Drum Tutor based in Camberley, Surrey.
+                            </p><br />
+                            <p class="text-black text-base text-raleway">
+                                With years of experience and a wealth of knowledge on the art of Drumming, he is always happy to accept new students.
+                            </p>
+                            <br />
+                            <p class="text-black text-base text-comicbook">"I offer one-to-one tuition for aspiring Drummers of all ages, create online tutorial videos and go the extra mile to help you become a master drummer. Scroll down to read what my students have to say!"</p>
+                            <br />
+                            <p class="text-comicbook text-black text-base mb-4">"Also, if you like my work and want to show some support, why not buy me a coffee?"</p>
+                            <p class="text-raleway text-sm mb-4">
+                                <style>
+                                    .bg-comic-yellow {
+                                        background: rgb(243,242,56);
+                                    }
+
+                                    .bmc-button img {
+                                        width: 35px !important;
+                                        margin-bottom: 1px !important;
+                                        box-shadow: none !important;
+                                        border: none !important;
+                                        vertical-align: middle !important;
+                                    }
+
+                                    .bmc-button {
+                                        padding: 7px 5px 7px 10px !important;
+                                        line-height: 35px !important;
+                                        min-width: 217px !important;
+                                        text-decoration: none !important;
+                                        display: inline-flex !important;
+                                        color: #ffffff !important;
+                                        background-color: #c53030 !important;
+                                        border-radius: 5px !important;
+                                        border: 1px solid transparent !important;
+                                        padding: 7px 5px 7px 10px !important;
+                                        font-size: 22px !important;
+                                        letter-spacing: 0.6px !important;
+                                        margin: 0 auto !important;
+                                        -webkit-box-sizing: border-box !important;
+                                        box-sizing: border-box !important;
+                                        -o-transition: 0.3s all linear !important;
+                                        -webkit-transition: 0.3s all linear !important;
+                                        -moz-transition: 0.3s all linear !important;
+                                        -ms-transition: 0.3s all linear !important;
+                                        transition: 0.3s all linear !important;
+                                    }
+
+                                        .bmc-button:hover, .bmc-button:active, .bmc-button:focus {
+                                            text-decoration: none !important;
+                                            opacity: 0.85 !important;
+                                            color: #ffffff !important;
+                                        }
+                                </style>
+                                <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button text-comicbook" target="_blank" href="https://www.buymeacoffee.com/lxL14os"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px; margin-right:15px; font-size:20px !important;">Buy Marcus an Irish Latte</span></a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <hr />
+                <br />
+
+                <p class="text-bebaslight text-2xl">customer testimonials</p>
+
+                <p class="text-raleway text-sm mb-4">
+                    See what my students have to say! If you want to add your experience to this page, send me your thoughts using the contact form.
+                </p>
+
+                <div class="bg-white border-l-4 border-gray-600 p-1 lg:p-6" style="background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=42&opacity=18)">
+
+                    <!--Header-->
+                    <div class="h-64 bg-red-700" style="background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=c53030ff&noise=626262&density=56&opacity=18)">
+                        <div class="bg-red-700 h-full p-2 flex-grow leading-none text-center" id="msd-header-content">
+                            <p class="text-4xl lg:text-6xl text-bebas tracking-stupidlytight">Marcus Shearer Drummer</p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/MSD.png" class="h-20 mx-auto" />
+                            <div class="text-bebaslight text-yellow-700 text-4xl">The Reviews</div>
+                        </div>
+                    </div>
+                    <div class="relative flex-none lg:flex w-full bg-gray-200 lg:m-2">
+
+                        <div class="flex-none lg:flex-auto h-full w-full lg:m-2 my-2  border-2 border-gray-700 rounded lg:max-w-xl">
+
+                            <div class="@MediaClassString">
+
+                                <video autoplay muted loop style="overflow:hidden;" class="hidden lg:block h-auto, w-full">
+                                    <source src="./Content/MSD_VID_T1.mp4" type="video/mp4" />
+                                </video>
+                                <img class="block lg:hidden h-auto, w-full" src="./Content/MSD_PIC_T1.jpg" />
+                            </div>
+                            <div class="h-auto text-gray-900 px-4 text-base my-2 lg:my-0 text-italic text-bold w-full text-comicbook lg:h-40">
+                                <p>Marcus is a fantastic tutor and teaches with real enthusiasm and a sense of fun. Marcus has totally captured my son's imagination by teaching him songs from his favourite bands. He has encouraged him to practise and my son is trying to write his own songs. - Suzie, Parent</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="flex-none lg:flex-auto h-full w-full lg:m-2 my-2  border-2 border-gray-700 rounded lg:max-w-xl">
+
+                            <div class="@MediaClassString">
+
+                                <video autoplay muted loop style="overflow:hidden;" class="hidden lg:block h-auto, w-full">
+                                    <source src="./Content/MSD_VID_T2.mp4" type="video/mp4" />
+                                </video>
+                                <img class="block lg:hidden h-auto, w-full" src="./Content/MSD_PIC_T2.jpg" />
+                            </div>
+                            <div class="h-auto text-gray-900 px-4 text-base my-2 lg:my-0 text-italic text-bold w-full text-comicbook lg:h-40">
+                                <p>My 14 year old son Oscar has been having drumming lessons with Marcus for two years . He looks forward to his lesson as Marcus always makes it fun and Oscar has made really good progress. Marcus is an excellent teacher and I would thoroughly recommend him to anyone thinking of taking drumming lessons. - Jacky, Parent</p>
+                            </div>
+                            <!--END-->
+                        </div>
+
+
+
+                    </div>
+                    <div class="bg-gray-200 w-full p-8 pb-16">
+                        <div class="text-comicbook text-2xl text-gray-900 text-center">
+                            <p>"Mr. Marcus Shearer is an excellent drum teacher. Our children have been fortunate to have the opportunity to learn from him."</p>
+                        </div>
+                        <!-- @*<div class="text-raleway text-sm text-gray-900 p-4 hidden lg:block"> -->
+                        <!-- <p>After about 8 lessons, our young children (6 and 9 years) have been able to perform in several events relatively well.</p> -->
+                        <!-- <p>I am also a musician (by hobby), and below are the reasons why I would like to provide my best recommendation to learn from Mr. Marcus Shearer:</p> -->
+                        <!-- <p>- He is both an excellent Teacher and an excellent drum Player in a band (who performs often). Therefore, his teaching is not only about theory but also based on his real experience being a great drum player in a band (such as how to coordinate with other band players, etc.)</p> -->
+                        <!-- <p>- He is able to teach reading a drum score, preparing for accreditation exams, improvisation, playing by ear, and preparing for a live performance.</p> -->
+                        <!-- <p>- He plays and is able to teach various drum styles (rock, jazz, latin, pop, country, disco, etc.)</p> -->
+                        <!-- <p>- He is able to greatly simplify a complex drum pattern into several easy ones, which would allow young children to be able to learn quickly and continue to build-up as their skills develop.</p> -->
+                        <!-- <p>- He is happy for parents’ participation, which is very helpful to help young children to learn. By participating during every lesson, I was able to help my young children practicing by reminding them key learning points, etc.</p> -->
+                        <!-- <p>- He is happy for us to record his teaching so that his students can learn better by watching the recording during practices prior to the subsequent lessons.</p> -->
+                        <!-- <p>- He started learning drums very early (got his first drum kit when he was 4-years old) and therefore, can relate well with young children</p> -->
+                        <!-- <p>- He has an excellent “hearing” and is able to write and teach drum patterns quickly after hearing songs. He is also able to tune very quickly.</p> -->
+                        <!-- <p>- He is also an excellent drum “mechanics” who is able to provide advise on various drum and accessories selections, resolve any issues related to drums.</p> -->
+                        <!-- </div>*@ -->
+                        <div class="text-comicbook text-2xl text-gray-900 text-right">
+                            <p>Widianto, Parent</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="relative flex-none lg:flex w-full bg-gray-200 lg:m-2">
+
+                        <div class="flex-none lg:flex-auto h-full w-full lg:m-2 my-2  border-2 border-gray-700 rounded lg:max-w-xl">
+
+                            <div class="@MediaClassString">
+
+                                <video autoplay muted loop style="overflow:hidden;" class="hidden lg:block h-auto, w-full">
+                                    <source src="./Content/MSD_VID_T3.mp4" type="video/mp4" />
+                                </video>
+                                <img class="block lg:hidden h-auto, w-full" src="./Content/MSD_PIC_T3.jpg" />
+                            </div>
+                            <div class="h-auto text-gray-900 px-4 text-base my-2 lg:my-0 text-italic text-bold w-full text-comicbook lg:h-40">
+                                <p>Marcus' approach is very child-centric and adapts his approach to suit my son. Marcus is teaching him by encouraging his likes and taste in music. Marcus appears to enjoy teaching which reflects in what he does. - Mark, Parent</p>
+                            </div>
+                            <!--END-->
+                        </div>
+
+                        <div class="flex-none lg:flex-auto h-full w-full lg:m-2 my-2  border-2 border-gray-700 rounded lg:max-w-xl">
+
+                            <div class="@MediaClassString">
+
+                                <video autoplay muted loop style="overflow:hidden;" class="hidden lg:block h-auto, w-full">
+                                    <source src="./Content/MSD_VID_T4.mp4" type="video/mp4" />
+                                </video>
+                                <img class="block lg:hidden h-auto, w-full" src="./Content/MSD_PIC_T4.jpg" />
+                            </div>
+                            <div class="h-auto text-gray-900 px-4 text-base my-2 lg:my-0 text-italic text-bold w-full text-comicbook lg:h-40">
+                                <p>Woof! 🐕 - Milo, Student's Dog</p>
+                            </div>
+                            <!--END-->
+                        </div>
+                    </div>
+
+                    <div class="relative flex-none lg:flex w-full bg-gray-200 lg:m-2">
+
+                        <div class="flex-none lg:flex-auto h-full w-full lg:m-2 my-2  border-2 border-gray-700 rounded lg:max-w-xl">
+
+                            <div class="@MediaClassString">
+
+                                <video autoplay muted loop style="overflow:hidden;" class="hidden lg:block h-auto, w-full">
+                                    <source src="./Content/MSD_VID_T5.mp4" type="video/mp4" />
+                                </video>
+                                <img class="block lg:hidden h-auto, w-full" src="./Content/MSD_PIC_T5.jpg" />
+                            </div>
+                            <div class="h-auto text-gray-900 px-4 text-base my-2 lg:my-0 text-italic text-bold w-full text-comicbook lg:h-40">
+                                <p>Marcus makes lessons really fun. It isn't all text book text book text book. We play songs and listen to music which is cool. - Charlie, Student</p>
+                            </div>
+                            <!--END-->
+                        </div>
+
+                        <div class="flex-none lg:flex-auto h-full w-full lg:m-2 my-2  border-2 border-gray-700 rounded lg:max-w-xl">
+
+                            <div class="@MediaClassString">
+
+                                <video autoplay muted loop style="overflow:hidden;" class="hidden lg:block h-auto, w-full">
+                                    <source src="./Content/MSD_VID_T6.mp4" type="video/mp4" />
+                                </video>
+                                <img class="block lg:hidden h-auto, w-full" src="./Content/MSD_PIC_T6.jpg" />
+                            </div>
+                            <div class="h-auto text-gray-900 px-4 text-base my-2 lg:my-0 text-italic text-bold w-full text-comicbook lg:h-40">
+                                <p>Contact me if you'd like to hear more!</p>
+                            </div>
+                            <!--END-->
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-200 w-full p-8 pb-16">
+                        <div class="text-comicbook text-2xl text-gray-900 text-center">
+                            <p>"So patient and informative in his approach to teaching. My son loves his lessons and Marcus is always available to answer any questions he has. Very flexible with COVID restrictions and zoom lessons currently! Highly recommended"</p>
+                        </div>
+                        <div class="text-comicbook text-2xl text-gray-900 text-right">
+                            <p>Hayley, Parent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- About End -->
+        <!-- Tuition Start -->
+
+        <div class="pt-12 bg-white" id="tuition">
+            <div class="container mx-auto">
+                <div class="p-4 pb-16">
+                    <h2 class="text-bebaslight text-4xl mb-4">Book Tuition</h2>
+
+                    <p>Marcus offers remote or in-person private 1-to-1 tuition from his drum studio in Surrey.</p>
+                    <br />
+                    <p class="text-bebaslight text-2xl">The Drum Studio</p>
+                    <p class="mb-4">The drum studio is outfitted with a professional kit, courseware and provides a positive distraction free environment in which to learn.</p>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <div class="col-span-1">
+                            <img src="./Content/Photo_DrumStudio_01.jpg" class="rounded-lg" />
+                        </div>
+                        <div class="col-span-1">
+                            <div class="bg-gray-200 rounded-lg m-4 p-4">
+                                <p class="text-bebaslight text-2xl">Lesson Types</p>
+                                <p class="my-1 italic">"I currently offer my students slots of 30 minute flexible lessons, where the content of each lesson is adapted to the level and needs of each student...</p>
+                                <p class="my-1 italic">...I reccommend booking lessons in batches, establishing a regular learning schedule helps build confidence and skill faster...</p>
+                                <p class="my-1 italic">...Talk to me during one of our lessons, and I can reserve the same time for you each week"</p>
+                            </div>
+                            <div class="mx-4">
+                                <img src="./Content/Photo_DrumStudio_02.jpg" class="rounded-lg" />
+                            </div>
+                            <div class="bg-gray-200 rounded-lg m-4 p-4">
+                                <p>Get in touch with me <a href="#contact" class="text-blue-500">here</a> if you're interested in booking tuition!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tuition End -->
+        <!-- Contact Start -->
+
+        <div class="container mx-auto h-screen bg-gray-900 text-white pt-12" id="contact">
+
+            <div class="container mx-auto p-4">
+
+
+                <div class="mt-20 text-white pb-20">
+                    <h1 class="text-4xl text-bebaslight mb-4">Contact Marcus</h1>
+
+                    <p>Maybe you have questions about an upcoming lesson or maybe it's your first time drumming with me and want to let me know a bit about yourself.</p>
+                    <br />
+
+                    <p>Whatever you'd like to contact me about, drop me a message on one of the social media pages below and I'll get back to you!</p>
+                    <br />
+                    <div class="flex text-center mt-8">
+                        <div class="w-1/2" href="https://www.facebook.com/marcusshearerdrummer/">
+                            <i class="fab fa-facebook mx-4 text-blue-700 text-5xl "></i>
+                            <p>Message me on <a class="text-blue-600" href="https://www.facebook.com/marcusshearerdrummer/">Facebook</a></p>
+
+                        </div>
+                        <div class="w-1/2" href="https://www.instagram.com/marcusshearerdrummer/">
+                            <i class="fab fa-instagram mx-4 text-blue-700 text-5xl "></i>
+                            <p>Message me on <a class="text-blue-600" href="https://www.instagram.com/marcusshearerdrummer/">Instagram</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact End -->
+
+
+            <div class="content px-4 mt-16">
+
+                <!--Footer-->
+                <div class="sticky w-full h-32 bg-gray-900 text-white grid grid-cols-5 gap-4 hidden  lg:block">
+                    <div class="text-2xs">MarcusShearerDrummer.co.uk uses Cookies, by using this site you consent to the use of cookies</div>
+                    <div><a href="Marcus on Instagram"></a> </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <a href="Content/MSD_PrivacyPolicy.pdf">Privacy Policy</a>
+                    </div>
+                    <!--Footer End-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+</html>

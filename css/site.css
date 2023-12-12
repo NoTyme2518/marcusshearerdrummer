@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+html{scroll-behavior:smooth}
+
+body {
+    //background: darken(#1a202c, 5%);
+    background: rgb(26, 32, 44);
+}
+
+div {
+    transition: all linear 0.2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#msd-header {
+    transition: all linear 0.2s;
+}
+
+.text-2xs {
+    font-size: .5rem;
+}
+
+.text-bebas {
+    font-family: 'Bebas', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.text-caveat {
+    font-family: 'Caveat', cursive;
+}
+
+#msd-social-bar {
+    transition: all linear 0.4s;
+}
+
+.text-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-bebaslight {
+    font-family: 'Bebas', cursive;
+}
+
+.text-comicbook {
+    font-family: 'Comic-Book', cursive;
+}
+
+.text-bungee {
+    font-family: 'Bungee', cursive;
+}
+
+.tracking-stupidlytight {
+    letter-spacing: -0.08em;
+}
+
+.tracking-stupidlywide {
+    letter-spacing: 0.7em;
+}
+
+.fade-in{
+    animation:fadein 2s;
+}
+
+
+@font-face {
+    font-family: "Comic-Book";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/Comic%20Book%20Italic.otf")
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/Bebas-Regular.ttf") format("opentype")
+}
+
+.clndr-controls {
+    font-family: 'Bebas', cursive;
+    align-items: flex-end;
+}
+
+.month {
+    font-size: 2.2em;
+    width: 50%;
+}
+
+.clndr-table {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Bebas', cursive;
+}
+
+.adjacent-month {
+    background: #1A202C !important;
+}
+
+.clndr-controls {
+    display: flex;
+    font-size: 2em;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-days {
+    background: #c53030;
+}
+
+.clndr-control-button {
+    flex-grow: 1;
+    width: auto;
+}
+
+.clndr-previous-button {
+    content: '<' !important;
+}
+
+
+.day {
+    background: #2F855A;
+    border: solid 1px white;
+    height: 1em;
+    padding: 1em;
+    width: 100px;
+    &.past
+
+{
+    background: #2D3748;
+}
+
+&:hover {
+    opacity: 0.9;
+    background: #68D391;
+}
+
+&:active {
+    opacity: 0.9;
+    background: #68D391;
+}
+
+&.event {
+    background: #4A5568;
+}
+
+&.today {
+    border: solid 2px yellow;
+}
+}
+
+
+
+    .words::before {
+        -webkit-animation: words 1s linear 0s 1 normal forwards;
+        animation: words 1s linear 0s 1 normal forwards;
+        content: "";
+    }
+
+    .letter-changer::before {
+        animation: changeLetter 3s linear 1s 1 normal forwards;
+        -webkit-animation: changeLetter 3s linear 1s 1 normal forwards;
+        content: "";
+    }
+
+    .letter-changer::after {
+        animation: cursor 1s linear 2.2s 1 normal forwards, cursor 0.6s linear 4s 3 normal forwards;
+        -webkit-animation: cursor 1s linear 2.2s 1 normal forwards, cursor 0.6s linear 4s 3 normal forwards;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        content: "";
+    }
+
+    .accessibility {
+        width: 0;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    @keyframes words {
+        100% {
+            content: "Learn to Drum with ";
+        }
+    }
+
+    @-webkit-keyframes words {
+        100% {
+            content: "Learn to Drum with ";
+        }
+    }
+
+    @-webkit-keyframes changeLetter {
+        0% {
+            content: "";
+        }
+
+        3% {
+            content: "a";
+        }
+
+        6% {
+            content: "an";
+        }
+
+        9% {
+            content: "an E";
+        }
+
+        12% {
+            content: "an Ex";
+        }
+
+        15% {
+            content: "an Exp";
+        }
+
+        18% {
+            content: "an Expe";
+        }
+
+        21% {
+            content: "an Exper";
+        }
+
+        24% {
+            content: "an Expert";
+        }
+
+        25% {
+            content: "an Expert";
+        }
+
+        26% {
+            content: "an Expert";
+        }
+
+        27% {
+            content: "an Expert";
+        }
+
+        28% {
+            content: "an Exper";
+        }
+
+        29% {
+            content: "an Expe";
+        }
+
+        30% {
+            content: "an Exp";
+        }
+
+        31% {
+            content: "an Ex";
+        }
+
+        32% {
+            content: "an E";
+        }
+
+        33% {
+            content: "an E";
+        }
+
+        34% {
+            content: "an";
+        }
+
+        35% {
+            content: "a";
+        }
+
+        38% {
+            content: "a S";
+        }
+
+        41% {
+            content: "a Su";
+        }
+
+        44% {
+            content: "a Sup";
+        }
+
+        47% {
+            content: "a Supe";
+        }
+
+        50% {
+            content: "a Super";
+        }
+
+        53% {
+            content: "a Superh";
+        }
+
+        56% {
+            content: "a Superhe";
+        }
+
+        59% {
+            content: "a Superher";
+        }
+
+        62% {
+            content: "a Superhero";
+        }
+
+        63% {
+            content: "a Superhero";
+        }
+
+        64% {
+            content: "a Superhero";
+        }
+
+        65% {
+            content: "a Superhero";
+        }
+
+        66% {
+            content: "a Superher";
+        }
+
+        67% {
+            content: "a Superhe";
+        }
+
+        68% {
+            content: "a Superh";
+        }
+
+        69% {
+            content: "a Super";
+        }
+
+        70% {
+            content: "a Supe";
+        }
+
+        71% {
+            content: "a Sup";
+        }
+
+        72% {
+            content: "a Su";
+        }
+
+        73% {
+            content: "a S";
+        }
+
+        74% {
+            content: "a ";
+        }
+
+        77% {
+            content: "a P";
+        }
+
+        80% {
+            content: "a Pr";
+        }
+
+        83% {
+            content: "a Pro";
+        }
+
+        86% {
+            content: "a Prof";
+        }
+
+        89% {
+            content: "a Profe";
+        }
+
+        92% {
+            content: "a Profes";
+        }
+
+        95% {
+            content: "a Profess";
+        }
+
+        96% {
+            content: "a Professi";
+        }
+
+        97% {
+            content: "a Professio";
+        }
+
+        98% {
+            content: "a Profession";
+        }
+
+        99% {
+            content: "a Professiona";
+        }
+
+        100% {
+            content: "a Professional";
+        }
+    }
+
+    @keyframes changeLetter {
+        0% {
+            content: "";
+        }
+
+        3% {
+            content: "a";
+        }
+
+        6% {
+            content: "an";
+        }
+
+        9% {
+            content: "an E";
+        }
+
+        12% {
+            content: "an Ex";
+        }
+
+        15% {
+            content: "an Exp";
+        }
+
+        18% {
+            content: "an Expe";
+        }
+
+        21% {
+            content: "an Exper";
+        }
+
+        24% {
+            content: "an Expert";
+        }
+
+        25% {
+            content: "an Expert";
+        }
+
+        26% {
+            content: "an Expert";
+        }
+
+        27% {
+            content: "an Expert";
+        }
+
+        28% {
+            content: "an Exper";
+        }
+
+        29% {
+            content: "an Expe";
+        }
+
+        30% {
+            content: "an Exp";
+        }
+
+        31% {
+            content: "an Ex";
+        }
+
+        32% {
+            content: "an E";
+        }
+
+        33% {
+            content: "an E";
+        }
+
+        34% {
+            content: "an";
+        }
+
+        35% {
+            content: "a";
+        }
+
+        38% {
+            content: "a S";
+        }
+
+        41% {
+            content: "a Su";
+        }
+
+        44% {
+            content: "a Sup";
+        }
+
+        47% {
+            content: "a Supe";
+        }
+
+        50% {
+            content: "a Super";
+        }
+
+        53% {
+            content: "a Superh";
+        }
+
+        56% {
+            content: "a Superhe";
+        }
+
+        59% {
+            content: "a Superher";
+        }
+
+        62% {
+            content: "a Superhero";
+        }
+
+        63% {
+            content: "a Superhero";
+        }
+
+        64% {
+            content: "a Superhero";
+        }
+
+        65% {
+            content: "a Superhero";
+        }
+
+        66% {
+            content: "a Superher";
+        }
+
+        67% {
+            content: "a Superhe";
+        }
+
+        68% {
+            content: "a Superh";
+        }
+
+        69% {
+            content: "a Super";
+        }
+
+        70% {
+            content: "a Supe";
+        }
+
+        71% {
+            content: "a Sup";
+        }
+
+        72% {
+            content: "a Su";
+        }
+
+        73% {
+            content: "a S";
+        }
+
+        74% {
+            content: "a ";
+        }
+
+        77% {
+            content: "a P";
+        }
+
+        80% {
+            content: "a Pr";
+        }
+
+        83% {
+            content: "a Pro";
+        }
+
+        86% {
+            content: "a Prof";
+        }
+
+        89% {
+            content: "a Profe";
+        }
+
+        92% {
+            content: "a Profes";
+        }
+
+        95% {
+            content: "a Profess";
+        }
+
+        96% {
+            content: "a Professi";
+        }
+
+        97% {
+            content: "a Professio";
+        }
+
+        98% {
+            content: "a Profession";
+        }
+
+        99% {
+            content: "a Professiona";
+        }
+
+        100% {
+            content: "a Professional";
+        }
+    }
+
+    @keyframes cursor {
+        0% {
+            content: "";
+        }
+
+        50% {
+            content: "|";
+        }
+
+        100% {
+            content: "";
+        }
+    }
+
+    @-webkit-keyframes cursor {
+        0% {
+            content: "";
+        }
+
+        50% {
+            content: "|";
+        }
+
+        100% {
+            content: "";
+        }
+    }
